@@ -17,11 +17,11 @@ const Movies = () => {
     setLoading(false);
   }
   return (
-    <div >
+    <div className={styles.moviesPage}>
         {loading?
            <h1 className={styles.loading}>Loading . . . 🏃🏻‍♀️</h1>
         :(
-          <>
+          <main className={styles.movie_back}>
             <h1 className={styles.headTitle}>Movies!</h1>
             <ul className={styles.movies}>
               {movies.map((ele)=>{
@@ -33,7 +33,7 @@ const Movies = () => {
               <div>📞 010-2648-2610</div>
               <div>✉️ helim01033@naver.com</div>
             </footer>
-          </>
+          </main>
         )}
     </div>
   );

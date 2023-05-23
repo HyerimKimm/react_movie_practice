@@ -6,6 +6,7 @@ const Movie = ({movie}) => {
     const genres = movie.genres;
     return (
         <li className={styles.movieItem}>
+            <button className={styles.movieItemButton}>
             <h3 className={styles.movieItemTitle}>{movie.title}</h3>
             <section className={styles.movieItemInfo}>
                 <img className={styles.movieItemInfoPoster} src={movie.medium_cover_image}/>
@@ -17,6 +18,7 @@ const Movie = ({movie}) => {
                     <div className={styles.movieItemInfoMainDescription}>{movie.description_full}</div>
                 </section>
             </section>
+            </button>
         </li>
     );
 };
