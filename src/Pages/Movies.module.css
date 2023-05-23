@@ -3,6 +3,9 @@
     padding: 0;
     box-sizing: border-box;
 }
+html, body {
+    background-color: rgb(36, 29, 20);
+}
 .movie_back {
     background-color: rgb(36, 29, 20);
 }
@@ -17,6 +20,7 @@ footer {
 }
 .loading {
     margin: 20px;
+    color: whitesmoke;
 }
 .headTitle {
     background-color: rgb(36, 29, 20);

@@ -10,46 +10,53 @@ li {
     min-width: 400px;
     height: 300px;
     margin: 15px 15px 15px 15px;
-    padding: 0;
+    padding: 2px;
 }
 /* movie 아이템 전체를 감싸고 있는 li 태그 */
 .movieItemButton:hover {
     margin: 0;
     padding: 3%;
     width: 100%;
-    height: 100%;
+    height: 300px;
     background-color: rgba(245, 230, 204,1);
     border-radius: 10px;
     border-style: none;
     cursor: pointer;
     display: flex;
     flex-direction: column;
+    flex-wrap: nowrap;
     transition:all 0.3s ease;
+    text-decoration: none;
+    color: black;
 }
 .movieItemButton:not(:hover) {
     margin: 0;
     padding: 3%;
     width: 100%;
-    height: 100%;
+    height: 300px;
     background-color: rgba(246, 233, 206,0.75);
     border-radius: 10px;
     border-style: none;
     cursor: pointer;
     display: flex;
+    flex-wrap: nowrap;
     flex-direction: column;
     justify-content: space-between;
     transition:all 0.3s ease;
+    text-decoration: none;
+    color: black;
 }
 /* movie item 내의 h3 태그 */
 .movieItemTitle {
-    margin: 10px 0px 5px 10px;
+    margin: 10px 0px 5px 5px;
     font-size: 1.3rem;
-    height: 20%;
+    height: 15%;
     text-align: start;
 }
 /*movie item 내의 h3를 제외한 전체를 감싸고 있는 section*/
 .movieItemInfo {
-    margin: 5px 5px 10px 10px;
+    margin: 5px 5px 5% 10px;
+    height: 85%;
     display: flex;
     flex-direction: row;
     justify-content:start;
@@ -58,26 +65,30 @@ li {
 /* movie item 내의 포스터를 출력하는 img 태그*/
 .movieItemInfoPoster {
     margin: 0px 5px 0px 0px;
-    width: 50%;
     max-width: 200px;
-    height: 70%;
+    max-height: 90%;
     object-fit:contain;
 }
 /* movie item 내의 메인 정보들을 감싸고 있는 section 태그*/
 .movieItemInfoMain {
     margin: 0px 0px 0px 5px;
-    height: 75%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
 }
 /* movie item 내의 메인 정보 중 장르 정보*/
 .mmovieItemInfoMainGenre {
     color: rgb(154, 84, 5);
     text-align: start;
-    height: 10%;
 }
 /* movie item 내의 메인 정보 중 설명 */
 .movieItemInfoMainDescription {
-    height: 90%;
-    max-height: 300px;
-    overflow-y: hidden;
+    text-overflow: clip;
+    padding: 3% 0 3% 0 ;
     text-align: start;
+    display: -webkit-inline-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 9;
+    overflow: hidden;
 }
