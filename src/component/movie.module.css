@@ -1,0 +1,52 @@
+* {
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+}
+li {
+    background-color: rgba(245, 230, 204,0.8);
+    list-style: none;
+    margin: 10px;
+    padding: 10px;
+    border-radius: 10px;
+    width: 47%;
+    min-width: 400px;
+}
+/* movie 아이템 전체를 감싸고 있는 li 태그 */
+.movieItem {
+    display: flex;
+    flex-direction: column;
+}
+/* movie item 내의 h3 태그 */
+.movieItemTitle {
+    margin: 10px 0px 5px 10px;
+    font-size: 1.5rem;
+}
+/*movie item 내의 h3를 제외한 전체를 감싸고 있는 section*/
+.movieItemInfo {
+    margin: 5px 5px 10px 10px;
+    display: flex;
+    flex-direction: row;
+    justify-content:start;
+    align-content: start;
+}
+/* movie item 내의 포스터를 출력하는 img 태그*/
+.movieItemInfoPoster {
+    margin: 0px 5px 0px 0px;
+    width: 50%;
+    max-width: 200px;
+    object-fit: contain;
+}
+/* movie item 내의 메인 정보들을 감싸고 있는 section 태그*/
+.movieItemInfoMain {
+    margin: 0px 0px 0px 5px;
+}
+/* movie item 내의 메인 정보 중 장르 정보*/
+.mmovieItemInfoMainGenre {
+    color: rgb(154, 84, 5);
+}
+.movieItemInfoMainDescription {
+    height: 80%;
+    max-height: 300px;
+    overflow-y: hidden;
+}

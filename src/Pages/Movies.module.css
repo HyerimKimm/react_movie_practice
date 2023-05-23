@@ -1,0 +1,33 @@
+* {
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+}
+footer {
+    background-color: rgb(55, 53, 50);
+    padding: 20px;
+    min-height: 10%;
+    color: rgba(255,255,255,0.7);
+}
+.footerTItle {
+    color: rgb(255, 248, 235);
+}
+.loading {
+    margin: 20px;
+}
+.headTitle {
+    background-color: rgb(36, 29, 20);
+    color: rgb(255, 255, 255);
+    min-height: 10%;
+    padding: 15px 0px 0px 0px;
+    text-align: center;
+}
+.movies {
+    background-color: rgb(36, 29, 20);
+    padding: 10px 0px 10px 0px;
+    min-height:80%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+}
