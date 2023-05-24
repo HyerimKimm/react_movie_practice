@@ -1,0 +1,17 @@
+.detailSection {
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+}
+.title {
+    height: fit-content;
+    max-height: 5rem;
+}
+.detailWithoutTitle {
+    display: flex;
+    flex-direction: row;
+}
+.detailImg {
+    max-width: 170px;
+    max-height:230px;
+}

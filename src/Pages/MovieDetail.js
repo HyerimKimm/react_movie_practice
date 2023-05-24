@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import { useParams } from "react-router-dom";
 import styles from '../Pages/MovieDetail.module.css'
+import MovieProfile from '../component/MovieProfile';
 
 const MovieDetail = () => {
 const { id } = useParams();
@@ -18,10 +19,12 @@ useEffect(()=>{
 },[]);
 
     return (
-        <main className={styles.detailMain}>
-            <h1>This is Movie Detail Page!</h1>
-            <div>{movieDetailData.title}</div>
-        </main>
+        <body className={styles.detailBody}>
+            <main className={styles.detailMain}>
+                <MovieProfile movie={movieDetailData}/>
+            </main>
+        </body>
+        
     );
 };
 
