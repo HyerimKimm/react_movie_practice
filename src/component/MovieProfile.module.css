@@ -9,9 +9,31 @@
 }
 .detailWithoutTitle {
     display: flex;
+    flex: basis;
     flex-direction: row;
 }
+.detailImgSection {
+    flex: basis;
+}
+.detailInfoSection {
+    flex: basis;
+}
 .detailImg {
-    max-width: 170px;
-    max-height:230px;
+    padding: 10px;
+    max-width: 180px;
+}
+.detailSmallInfos {
+    margin: 10px;
+    display: flex;
+    flex-direction: row;
+}
+.smallPatition {
+    width: 3px;
+    min-width: 3px;
+    height: 1.2rem;
+    margin: 0 0.5rem;
+    background-color: rgb(103, 61, 61);
+}
+.detailInfoDescription {
+    margin: 0 10px
 }
